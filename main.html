@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <script>
+        function check() {
+            document.getElementById("name").innerHTML = document.myform.name.value;
+            document.getElementById("contact").innerHTML = document.myform.num.value;
+            document.getElementById("email").innerHTML = document.myform.email.value;
+        }
+    </script>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+        .left {
+            width: 50%;
+            height: 100%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .right {
+            width: 50%;
+            height: 100%;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+    </style>
+    <head>
+        <title>CV Builder</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <h1>CV Builder</h1>
+                <h2>Enter your details</h2>
+                <form name='myform'>
+                    <p>Enter Name:
+                        <input type = 'text' name='name' value = ''>
+                    </p>
+                    <p>Enter Contact Number:
+                        <input type = 'tel' name='num' value = ''>
+                    </p>
+                    <p>Enter Email:
+                        <input type = 'email' name='email' value = ''>
+                    </p>
+                    <p>
+                        <input type = 'submit' onclick='check(); return false'>
+                    </p>
+                </form>
+            </div>
+            <div class="right">
+                <h1>CV</h1>
+                <p id='name'></p>
+                <p id='contact'></p>
+                <p id='email'></p>
+        </div>     
+    </body>
+</html>
+
+<!-- //text,table,basic css,soho,javascript -->
+
+
+
+
+
